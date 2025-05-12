@@ -8,9 +8,10 @@ function App() {
   md:h-[calc(100vh-0.75rem*2)] w-screen h-screen md:rounded-2xl bg-black text-white"
     >
       <NavBar className="p-2 border-b border-gray-500" />
-      <div className="p-2">
+
+      <main className="p-2">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 }

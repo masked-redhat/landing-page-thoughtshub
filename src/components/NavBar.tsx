@@ -49,7 +49,7 @@ const SiteLink = ({ name, to, path }: SiteLinkProps) => {
         (path === to ? "text-white" : null)
       }
     >
-      {strings.capitalize(name)}
+      {strings.title(name)}
     </Link>
   );
 };

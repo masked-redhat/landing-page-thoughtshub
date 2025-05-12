@@ -8,8 +8,19 @@ const capitalize = (val: string): string => {
     return val;
 }
 
+const title = (val: string): string => {
+    let words = val.split(" ")
+
+    words = words.map(w => capitalize(w))
+
+    let joined = words.join(" ")
+
+    return joined;
+}
+
 const strings = {
-    capitalize
+    capitalize,
+    title
 }
 
 export default strings
