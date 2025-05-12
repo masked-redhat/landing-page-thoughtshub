@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { VscLayoutPanelJustify } from "react-icons/vsc";
 
 interface CarouselProps {
   images: string[];
