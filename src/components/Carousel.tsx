@@ -85,7 +85,7 @@ const CarouselActionButton = ({ side, action }: CarouselActionButtonProps) => {
       }
     >
       <button
-        className="p-1 bg-slate-500/55 rounded-full w-7 h-7 flex items-center justify-center text-sm cursor-pointer shadow"
+        className="p-1 bg-black/55 rounded-full w-7 h-7 flex items-center justify-center text-sm cursor-pointer shadow hover:bg-black"
         onClick={() => action()}
       >
         {side === "left" ? <FaChevronLeft /> : <FaChevronRight />}
@@ -100,10 +100,10 @@ const CarouselImage = ({ val }: { val: any }) => {
       <img
         src={val.image}
         alt=""
-        className="object-cover h-full w-full object-center transition-all"
+        className="object-cover h-full w-full object-center transition-all select-none"
       />
       {val.title && (
-        <div className="absolute h-full w-full top-0 left-0 bg-gradient-to-t from-black via-black/35 to-transparent flex flex-col gap-2 pb-9 px-6">
+        <div className="absolute h-full w-full top-0 left-0 bg-gradient-to-t from-black via-black/65 to-transparent flex flex-col gap-2 pb-9 px-6">
           <div className="bg-gray-200 w-[18%] h-2 mt-auto mb-2"></div>
           <h4 className="font-bold tracking-wide text-4xl text-gray-50">
             {val.title}

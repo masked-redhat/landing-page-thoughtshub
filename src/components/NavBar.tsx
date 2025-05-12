@@ -30,7 +30,7 @@ const NavBar = ({ className }: { className?: string }) => {
           id="logo"
         />
 
-        <ul className="flex gap-5 text-sm ml-auto px-4">
+        <ul className="flex md:gap-5 gap-2.5 text-sm ml-auto md:px-4">
           {links.map((link) => (
             <SiteLink
               name={link[0]}

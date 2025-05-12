@@ -13,7 +13,7 @@ const BaseButton = ({ onClick, className, children }: ButtonProps) => {
     <button
       onClick={onClick}
       className={
-        "cursor-pointer rounded-md px-8 py-2 bg-black hover:bg-black/85 text-white tracking-wide text-center transition-colors " +
+        "cursor-pointer rounded-md px-8 py-2 bg-black hover:bg-black/85 text-white tracking-wide text-center transition-colors select-none " +
         className
       }
     >

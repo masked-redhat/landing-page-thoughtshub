@@ -3,13 +3,10 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div
-      className="md:w-[100%] 
-  md:h-[calc(100vh-0.75rem*2)] w-screen h-screen md:rounded-2xl bg-black text-white transition-all"
-    >
-      <NavBar className="p-2 border-b border-gray-500" />
+    <div className="md:w-full md:h-[calc(100vh-0.75rem*2)] w-screen h-screen md:rounded-2xl bg-black text-white transition-all font-urban overflow-hidden mx-auto max-w-[1440px!important]">
+      <NavBar className="p-2 border-b border-gray-600 font-urban" />
 
-      <main className="p-2 md:h-[calc(100vh-1.9rem*2)] h-[calc(100vh-2.3rem)] w-full transition-all overflow-auto">
+      <main className="p-2 md:h-[calc(100vh-1.9rem*2)] h-[calc(100vh-2.3rem)] w-full transition-all overflow-auto bg-gradient-to-bl from-black via-black/25 via-55% to-purple-800/75">
         <Outlet />
       </main>
     </div>
