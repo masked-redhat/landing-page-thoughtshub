@@ -32,7 +32,12 @@ const NavBar = ({ className }: { className?: string }) => {
 
         <ul className="flex gap-5 text-sm ml-auto px-4">
           {links.map((link) => (
-            <SiteLink name={link[0]} path={pathname} to={link[1]}></SiteLink>
+            <SiteLink
+              name={link[0]}
+              path={pathname}
+              to={link[1]}
+              key={link[1]} // unique url for every link
+            ></SiteLink>
           ))}
         </ul>
       </nav>
