@@ -17,9 +17,11 @@ import dinesh_pfp from "../assets/dinesh_pfp.png"
 import kartikey_pfp from "../assets/kartikey_pfp.png"
 import ashish_pfp from "../assets/ashish_pfp.png"
 import pp1 from "../assets/pp1.jpg"
+import tc1 from "../assets/tc1.jpg"
+import tc2 from "../assets/tc2.jpg"
 
 const images = {
-    bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, about1, about2, about3, about4, banner1, icon, pp1,
+    bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, about1, about2, about3, about4, banner1, icon, pp1, tc1, tc2,
     pfp: { dinesh_pfp, kartikey_pfp, ashish_pfp }
 }
 

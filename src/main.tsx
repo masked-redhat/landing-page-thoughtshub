@@ -7,6 +7,7 @@ import Home from "./pages/Home.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import About from "./pages/About.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import TermsAndConditions from "./pages/TermsAndConditions.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "/about", Component: About },
       { path: "/privacy-policy", Component: PrivacyPolicy },
+      { path: "/terms-and-conditions", Component: TermsAndConditions },
     ],
     ErrorBoundary: NotFound,
   },

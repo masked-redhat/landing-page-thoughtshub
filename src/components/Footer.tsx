@@ -8,9 +8,9 @@ import {
 const Footer = () => {
   return (
     <div className="mt-24">
-      <hr className="border-gray-400 w-full" />
+      <hr className="border-gray-600 w-full" />
 
-      <div className="p-8 flex flex-col items-center justify-center font-space-grotesk gap-3.5">
+      <div className="p-8 flex flex-col items-center justify-center font-space-grotesk gap-3.5 text-gray-300">
         <p>&copy; ThoughtsHub 2025. All Rights Reserved.</p>
         <div className="flex gap-4 text-2xl *:cursor-pointer">
           <FaInstagram className="hover:text-pink-600" />

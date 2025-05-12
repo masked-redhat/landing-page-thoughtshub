@@ -6,7 +6,11 @@ import Footer from "./components/Footer";
 function App() {
   const { pathname } = useLocation();
 
-  const pathsWithFooter = ["/about", "/privacy-policy"];
+  const pathsWithFooter = [
+    "/about",
+    "/privacy-policy",
+    "/terms-and-conditions",
+  ];
 
   return (
     <div className="md:w-full md:h-[calc(100vh-0.75rem*2)] w-screen h-screen md:rounded-2xl bg-black text-white transition-all font-urban overflow-hidden mx-auto max-w-[1440px!important]">

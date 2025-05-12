@@ -1,5 +1,11 @@
-import type { ReactNode } from "react";
 import images from "../utils/images";
+import {
+  Section,
+  Content,
+  Heading,
+  Heading2,
+  ListItem,
+} from "../components/Documents";
 
 const PrivacyPolicy = () => {
   return (
@@ -15,195 +21,150 @@ const PrivacyPolicy = () => {
       </h1>
 
       <div className="mx-auto max-w-2xl space-y-5">
-        <PolicySection>
-          <PolicyContent className="font-bold">
-            Effective Date: 2025
-          </PolicyContent>
-          <PolicyContent>
+        <Section>
+          <Content className="font-bold">Effective Date: 2025</Content>
+          <Content>
             Your privacy is important to us. This Privacy Policy outlines how
             ThoughtsHub collects, uses, and protects your information when you
             use our mobile application.
-          </PolicyContent>
-        </PolicySection>
+          </Content>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>1. Information We Collect</PolicyHeading>
+        <Section>
+          <Heading>1. Information We Collect</Heading>
           <div>
-            <PolicyHeading2>Personal Information</PolicyHeading2>
-            <PolicyContentListItem>
+            <Heading2>Personal Information</Heading2>
+            <ListItem>
               Name, email address, and educational information when you register
-            </PolicyContentListItem>
-            <PolicyContentListItem>
+            </ListItem>
+            <ListItem>
               Profile data you provide (e.g., interests, skills)
-            </PolicyContentListItem>
+            </ListItem>
 
-            <PolicyHeading2>Content</PolicyHeading2>
-            <PolicyContentListItem>
+            <Heading2>Content</Heading2>
+            <ListItem>
               Images, text, and other content you upload to the app
-            </PolicyContentListItem>
+            </ListItem>
 
-            <PolicyHeading2>Technical Data</PolicyHeading2>
-            <PolicyContentListItem>
-              Device type, operating system, IP address
-            </PolicyContentListItem>
-            <PolicyContentListItem>
+            <Heading2>Technical Data</Heading2>
+            <ListItem>Device type, operating system, IP address</ListItem>
+            <ListItem>
               Usage patterns within the app (e.g., features accessed, time
               spent)
-            </PolicyContentListItem>
+            </ListItem>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>2. How We Use Your Information</PolicyHeading>
+        <Section>
+          <Heading>2. How We Use Your Information</Heading>
           <div>
-            <PolicyContentListItem>
+            <ListItem>
               To personalize your experience and deliver relevant content
-            </PolicyContentListItem>
-            <PolicyContentListItem>
+            </ListItem>
+            <ListItem>
               To improve app functionality and user engagement
-            </PolicyContentListItem>
-            <PolicyContentListItem>
+            </ListItem>
+            <ListItem>
               To communicate updates and information relevant to your interests
-            </PolicyContentListItem>
-            <PolicyContentListItem>
+            </ListItem>
+            <ListItem>
               To enforce our Terms and ensure platform integrity
-            </PolicyContentListItem>
+            </ListItem>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>3. Account and Data Deletion</PolicyHeading>
+        <Section>
+          <Heading>3. Account and Data Deletion</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               You may delete your account at any time via app settings
-            </PolicyContent>
-            <PolicyContent>
+            </Content>
+            <Content>
               Upon deletion, all personal data and uploaded content are
               permanently removed from our servers
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>4. Sharing of Information</PolicyHeading>
+        <Section>
+          <Heading>4. Sharing of Information</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               We do not sell or rent your personal data. We may share data with
               trusted third-party services for hosting, analytics, or technical
               support. Legal requests may require us to share limited data in
               compliance with applicable laws.
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>5. Security</PolicyHeading>
+        <Section>
+          <Heading>5. Security</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               We use encryption and modern security practices to protect your
               data. Access to user data is restricted to authorized personnel
               only.
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>6. Children's Privacy</PolicyHeading>
+        <Section>
+          <Heading>6. Children's Privacy</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               Our app is intended for users aged 13 and above We do not
               knowingly collect data from children under 13.
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>7. Your Rights</PolicyHeading>
+        <Section>
+          <Heading>7. Your Rights</Heading>
           <div>
-            <PolicyContentListItem>
-              Access and edit your profile at any time
-            </PolicyContentListItem>
-            <PolicyContentListItem>
-              Request deletion of your account and data
-            </PolicyContentListItem>
-            <PolicyContent>
+            <ListItem>Access and edit your profile at any time</ListItem>
+            <ListItem>Request deletion of your account and data</ListItem>
+            <Content>
               Contact us at biz.kartikey@gmail.com for any privacy concerns
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>8. Intellectual Property</PolicyHeading>
+        <Section>
+          <Heading>8. Intellectual Property</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               Our content, logos, design elements, and trademarks are the
               exclusive property of ThoughtsHub. Unauthorized use or
               reproduction is prohibited
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>9. Changes to This Policy</PolicyHeading>
+        <Section>
+          <Heading>9. Changes to This Policy</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               We may update this Privacy Policy periodically. Significant
               changes will be communicated via the app or email. Continued use
               of the app implies acceptance of the revised policy.
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
 
-        <PolicySection>
-          <PolicyHeading>10. Contact</PolicyHeading>
+        <Section>
+          <Heading>10. Contact</Heading>
           <div>
-            <PolicyContent>
+            <Content>
               For any questions regarding this Privacy Policy, please contact:
               Email:{" "}
               <a href="mailto:biz.kartikey@gmail.com" className="text-white">
                 biz.kartikey@gmail.com
               </a>
-            </PolicyContent>
+            </Content>
           </div>
-        </PolicySection>
+        </Section>
       </div>
-    </div>
-  );
-};
-
-const PolicySection = ({ children }: { children: ReactNode }) => {
-  return <div>{children}</div>;
-};
-
-const PolicyHeading = ({ children }: { children: ReactNode }) => {
-  return <h2 className="text-2xl font-black my-3 text-gray-100">{children}</h2>;
-};
-
-const PolicyHeading2 = ({ children }: { children: ReactNode }) => {
-  return <h3 className="text-xl font-black my-2 text-gray-200">{children}</h3>;
-};
-
-const PolicyContent = ({
-  className,
-  children,
-}: {
-  children: ReactNode;
-  className?: string;
-}) => {
-  return <p className={"text-gray-300 " + className}>{children}</p>;
-};
-
-const PolicyContentListItem = ({
-  className,
-  children,
-}: {
-  children: ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className="flex items-center gap-3">
-      <div className="bg-gray-300 w-1.5 h-1.5 rounded-full ml-1"></div>
-      <p className={"text-gray-300 " + className}>{children}</p>
     </div>
   );
 };
