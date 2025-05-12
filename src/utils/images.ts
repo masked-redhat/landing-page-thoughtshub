@@ -11,6 +11,11 @@ import about1 from "../assets/about1.jpg"
 import about2 from "../assets/about2.jpg"
 import about3 from "../assets/about3.jpg"
 import about4 from "../assets/about4.jpg"
+import about5 from "../assets/about5.jpg"
+import about6 from "../assets/about6.jpg"
+import about7 from "../assets/about7.jpg"
+import about8 from "../assets/about8.jpg"
+import about9 from "../assets/about9.jpg"
 import banner1 from "../assets/banner1.png"
 import icon from "../assets/icon.jpg"
 import dinesh_pfp from "../assets/dinesh_pfp.png"
@@ -21,7 +26,7 @@ import tc1 from "../assets/tc1.jpg"
 import tc2 from "../assets/tc2.jpg"
 
 const images = {
-    bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, about1, about2, about3, about4, banner1, icon, pp1, tc1, tc2,
+    bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, about1, about2, about3, about4, about5, about6, about7, about8, about9, banner1, icon, pp1, tc1, tc2,
     pfp: { dinesh_pfp, kartikey_pfp, ashish_pfp }
 }
 

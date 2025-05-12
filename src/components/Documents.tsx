@@ -30,8 +30,8 @@ export const ListItem = ({
   className?: string;
 }) => {
   return (
-    <div className="flex items-center gap-3">
-      <div className="bg-gray-300 w-1.5 h-1.5 rounded-full ml-1"></div>
+    <div className="flex items-start gap-3">
+      <div className="bg-gray-300 w-1.5 h-1.5 rounded-full ml-1 mt-[9px] aspect-square"></div>
       <p className={"text-gray-300 " + className}>{children}</p>
     </div>
   );

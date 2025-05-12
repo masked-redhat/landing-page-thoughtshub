@@ -14,7 +14,7 @@ const TermsAndConditions = () => {
         Terms & Conditions
       </h1>
 
-      <div className="mx-auto max-w-2xl space-y-5">
+      <div className="mx-auto max-w-2xl space-y-5 px-5">
         <Section>
           <Content className="font-bold">Effective Date: 2025</Content>
           <Content>

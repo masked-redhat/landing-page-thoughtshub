@@ -7,16 +7,16 @@ const About = () => {
     <div className="w-full h-full flex flex-col items-center md:gap-32 gap-16 font-space-grotesk *:text-right">
       <AboutSection className="w-full relative bg-black rounded-md overflow-hidden">
         <img
-          src={images.about3}
+          src={images.about1}
           alt="about"
-          className="w-full object-cover rounded-lg aspect-video opacity-95 shadow-xl"
+          className="w-full object-cover rounded-lg aspect-video opacity-95 shadow-xl object-center"
         />
         <FaChevronDown className="absolute bottom-6 mx-auto animate-bounce w-full text-2xl sm:opacity-100 opacity-0" />
       </AboutSection>
 
       <AboutSection>
         <h1 className="md:text-6xl text-5xl font-bold">
-          Hi, We are Thoughts<span className="text-orange-500">Hub</span> Team
+          Hi, We are ThoughtsHub Team
         </h1>
 
         <p className="md:text-xl md:w-[70%] w-full text-right">
