@@ -1,5 +1,5 @@
+import images from "../utils/images";
 import strings from "../utils/strings";
-import icon from "../assets/icon.jpg";
 import { Link, useLocation } from "react-router";
 
 interface SiteLinkProps {
@@ -11,7 +11,7 @@ interface SiteLinkProps {
 // [name, url]
 const links = [
   ["home", "/"],
-  ["about", "/about"],
+  ["about team", "/about"],
   ["download", "/download"],
   ["privacy policy", "/privacy-policy"],
   ["terms & conditions", "/terms-and-conditions"],
@@ -24,7 +24,7 @@ const NavBar = ({ className }: { className?: string }) => {
     <div className={className}>
       <nav className="flex items-center">
         <img
-          src={icon}
+          src={images.icon}
           alt="ThoughtsHub"
           className="aspect-square w-5 rounded-full select-none"
           id="logo"

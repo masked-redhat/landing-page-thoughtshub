@@ -5,12 +5,16 @@ import "./index.css";
 import App from "./App.tsx";
 import Home from "./pages/Home.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import About from "./pages/About.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
-    children: [{ index: true, Component: Home }],
+    children: [
+      { index: true, Component: Home },
+      { path: "/about", Component: About },
+    ],
     ErrorBoundary: NotFound,
   },
 ]);
