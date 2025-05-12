@@ -4,29 +4,29 @@ import images from "../utils/images";
 
 const About = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center gap-32 font-space-grotesk *:text-right">
+    <div className="w-full h-full flex flex-col items-center md:gap-32 gap-16 font-space-grotesk *:text-right">
       <AboutSection className="w-full relative bg-black rounded-md overflow-hidden">
         <img
           src={images.about3}
           alt="about"
           className="w-full object-cover rounded-lg aspect-video opacity-95 shadow-xl"
         />
-        <FaChevronDown className="absolute bottom-6 mx-auto animate-bounce w-full text-2xl" />
+        <FaChevronDown className="absolute bottom-6 mx-auto animate-bounce w-full text-2xl sm:opacity-100 opacity-0" />
       </AboutSection>
 
       <AboutSection>
-        <h1 className="text-6xl font-bold">
+        <h1 className="md:text-6xl text-5xl font-bold">
           Hi, We are Thoughts<span className="text-orange-500">Hub</span> Team
         </h1>
 
-        <p className="text-xl w-[70%] text-right">
+        <p className="md:text-xl md:w-[70%] w-full text-right">
           We are a passionate group of people trying to provide information in
           byte sized chunks for ease of access and consumption.
         </p>
       </AboutSection>
 
       <AboutSection>
-        <h2 className="text-5xl font-bold">Members</h2>
+        <h2 className="md:text-5xl text-4xl font-bold">Members</h2>
 
         <div className="flex gap-12 flex-wrap items-center justify-center">
           <TeamMemberPic pic={images.pfp.dinesh_pfp} name="Dinesh Bhati" />
@@ -36,10 +36,10 @@ const About = () => {
       </AboutSection>
 
       <AboutSection className="items-start text-left">
-        <h2 className="text-5xl font-bold">Contact Us</h2>
+        <h2 className="md:text-5xl text-4xl font-bold">Contact Us</h2>
 
-        <p className="text-lg">
-          Email:{" "}
+        <p className="md:text-lg">
+          Email:{"  "}
           <span className="font-black tracking-wider">
             <a href="mailto:biz.kartikey@gmail.com">biz.kartikey@gmail.com</a>
           </span>
@@ -65,7 +65,7 @@ const AboutSection = ({
 
 const TeamMemberPic = ({ pic, name }: { pic: string; name: string }) => {
   return (
-    <figure className="w-84 h-84 flex gap-2 flex-col">
+    <figure className="md:w-84 md:h-84 h-auto w-full aspect-square  flex gap-2 flex-col">
       <img
         src={pic}
         alt="dinesh"
