@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 function App() {
   const { pathname } = useLocation();
 
+  const pathsWithFooter = ["/about", "/privacy-policy"];
+
   return (
     <div className="md:w-full md:h-[calc(100vh-0.75rem*2)] w-screen h-screen md:rounded-2xl bg-black text-white transition-all font-urban overflow-hidden mx-auto max-w-[1440px!important]">
       <NavBar className="p-2 border-b border-gray-600 font-urban" />
@@ -34,12 +36,12 @@ function App() {
         <div className="w-full h-full relative overflow-auto p-2">
           <div
             className={
-              ["/about"].includes(pathname) ? "w-full" : "w-full h-full"
+              pathsWithFooter.includes(pathname) ? "w-full" : "w-full h-full"
             }
           >
             <Outlet />
           </div>
-          {["/about"].includes(pathname) && <Footer />}
+          {pathsWithFooter.includes(pathname) && <Footer />}
         </div>
       </main>
     </div>
