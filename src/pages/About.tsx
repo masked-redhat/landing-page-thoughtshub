@@ -19,7 +19,7 @@ const About = () => {
           Hi, We are ThoughtsHub Team
         </h1>
 
-        <p className="md:text-xl md:w-[70%] w-full text-right">
+        <p className="md:text-3xl lg:w-[80%] sm:text-2xl text-xl w-full text-right">
           We are a passionate group of people trying to provide information in
           byte sized chunks for ease of access and consumption.
         </p>

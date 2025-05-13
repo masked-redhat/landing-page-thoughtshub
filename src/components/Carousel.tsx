@@ -103,7 +103,7 @@ const CarouselImage = ({ val }: { val: any }) => {
         className="object-cover h-full w-full object-center transition-all select-none"
       />
       {val.title && (
-        <div className="absolute h-full w-full top-0 left-0 bg-gradient-to-t from-black via-black/65 to-transparent flex flex-col gap-2 pb-9 px-6">
+        <div className="absolute h-full w-full top-0 left-0 bg-gradient-to-t from-black/90 from-10% via-black/45 to-transparent flex flex-col gap-2 pb-9 px-6">
           <div className="bg-gray-200 w-[18%] h-2 mt-auto mb-2"></div>
           <h4 className="font-bold tracking-wide text-4xl text-gray-50">
             {val.title}

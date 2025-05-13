@@ -50,8 +50,8 @@ const SiteLink = ({ name, to, path }: SiteLinkProps) => {
     <Link
       to={to}
       className={
-        "text-gray-400 font-semibold tracking-wider hover:text-gray-200 cursor-pointer transition-all w-max " +
-        (path === to ? "text-white" : null)
+        "text-gray-400 tracking-wider hover:text-gray-200 cursor-pointer transition-all w-max " +
+        (path === to ? "text-white font-semibold" : null)
       }
     >
       {strings.title(name)}
