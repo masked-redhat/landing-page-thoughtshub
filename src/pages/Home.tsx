@@ -3,6 +3,7 @@ import Carousel from "../components/Carousel";
 import Button from "../ui/Button";
 import images from "../utils/images";
 import type { ReactNode } from "react";
+import Separator from "../components/Separator";
 
 interface FeatureBoxProps {
   image: string;
@@ -50,10 +51,6 @@ const HomeActionButtons = ({
   );
 };
 
-const Separator = () => {
-  return <hr className="mt-2 border-gray-600 opacity-40" />;
-};
-
 const Page1 = () => {
   return (
     <div className="h-[calc(100vh-2rem*2)] w-full flex flex-col md:justify-center items-center gap-4 px-5 lg:flex-row lg:items-center lg:gap-12 xl:gap-32 pt-2 relative">
@@ -87,7 +84,7 @@ const Page1 = () => {
 const Page2 = () => {
   return (
     <div className="-mx-2">
-      <div className="w-full h-full md:p-18 sm:p-6 py-6 px-2 mx-auto md:space-y-20 space-y-12 overflow-hidden -p-2">
+      <div className="w-full h-full md:p-18 sm:p-6 py-6 px-2 mx-auto md:space-y-20 space-y-12 overflow-hidden -p-2 bg-black/55">
         <div>
           <h1 className="md:text-6xl text-4xl font-black text-orange-100 text-center">
             Welcome to ThoughtsHub
@@ -151,54 +148,56 @@ const Page2 = () => {
 
 const Page3 = () => {
   return (
-    <div className="md:p-18 sm:p-6 py-6 px-2 md:space-y-15 space-y-12">
-      <div>
-        <h1 className="lg:text-4xl text-3xl">
-          What can you expect inside ThoughtsHub?
-        </h1>
-      </div>
+    <div className="-m-2">
+      <div className="md:p-18 sm:p-6 py-6 px-2 md:space-y-15 space-y-12 bg-black">
+        <div>
+          <h1 className="lg:text-4xl text-3xl">
+            What can you expect inside ThoughtsHub?
+          </h1>
+        </div>
 
-      <div className="flex flex-wrap gap-10">
-        <FeatureBox
-          image={images.image2}
-          altText="bite-size learning"
-          title="Bite-sized learning"
-        >
-          <p>
-            Read smart, sharp articles (in English + Hindi) across history,
-            science, business, psychology, tech, and more all in 60-100 words.
-          </p>
-          <p>Learn faster, retain longer.</p>
-        </FeatureBox>
+        <div className="flex flex-wrap gap-10 items-center justify-center">
+          <FeatureBox
+            image={images.image2}
+            altText="bite-size learning"
+            title="Bite-sized learning"
+          >
+            <p>
+              Read smart, sharp articles (in English + Hindi) across history,
+              science, business, psychology, tech, and more all in 60-100 words.
+            </p>
+            <p>Learn faster, retain longer.</p>
+          </FeatureBox>
 
-        <FeatureBox
-          image={images.image3}
-          altText="networking"
-          title="Global networking"
-        >
-          <p>
-            Connect with curious minds, share ideas, ask questions, and build
-            your voice through discussions and forums.
-          </p>
-        </FeatureBox>
+          <FeatureBox
+            image={images.image3}
+            altText="networking"
+            title="Global networking"
+          >
+            <p>
+              Connect with curious minds, share ideas, ask questions, and build
+              your voice through discussions and forums.
+            </p>
+          </FeatureBox>
 
-        <FeatureBox image={images.image4} altText="talk" title="Real talk">
-          <p>
-            No clutter, no pressure just real content, real students, real
-            thoughts.
-          </p>
-        </FeatureBox>
+          <FeatureBox image={images.image4} altText="talk" title="Real talk">
+            <p>
+              No clutter, no pressure just real content, real students, real
+              thoughts.
+            </p>
+          </FeatureBox>
 
-        <FeatureBox
-          image={images.image5}
-          altText="plant growing"
-          title="A growth mindset"
-        >
-          <p>
-            Every swipe is meant to add value to your thinking, your career, or
-            your awareness.
-          </p>
-        </FeatureBox>
+          <FeatureBox
+            image={images.image5}
+            altText="plant growing"
+            title="A growth mindset"
+          >
+            <p>
+              Every swipe is meant to add value to your thinking, your career,
+              or your awareness.
+            </p>
+          </FeatureBox>
+        </div>
       </div>
     </div>
   );
