@@ -12,7 +12,7 @@ interface SiteLinkProps {
 const links = [
   ["home", "/"],
   ["about", "/about"],
-  ["download", "/download"],
+//   ["download", "/download"],
   ["privacy policy", "/privacy-policy"],
   ["terms & conditions", "/terms-and-conditions"],
 ];

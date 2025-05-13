@@ -1,11 +1,10 @@
 import { FaChevronDown } from "react-icons/fa6";
 import type { ReactNode } from "../lib/reactNode";
 import images from "../utils/images";
-import Separator from "../components/Separator";
 
 const About = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center md:gap-32 gap-16 font-space-grotesk *:text-right overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center md:gap-32 gap-16 font-space-grotesk *:text-right overflow-hidden scroll-smooth">
       <AboutSection className="w-full relative bg-black rounded-md overflow-hidden">
         <img
           src={images.about1}
@@ -16,7 +15,7 @@ const About = () => {
       </AboutSection>
 
       <AboutSection>
-        <h1 className="md:text-6xl text-5xl font-bold">
+        <h1 className="md:text-6xl text-4xl font-bold">
           Hi, We are ThoughtsHub Team
         </h1>
 

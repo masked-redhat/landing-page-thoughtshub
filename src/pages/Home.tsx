@@ -84,7 +84,7 @@ const Page1 = () => {
 const Page2 = () => {
   return (
     <div className="-mx-2">
-      <div className="w-full h-full md:p-18 sm:p-6 py-6 px-2 mx-auto md:space-y-20 space-y-12 overflow-hidden -p-2 bg-black/55">
+      <div className="w-full h-full md:p-18 p-6 mx-auto md:space-y-20 space-y-12 overflow-hidden -p-2 bg-black/55">
         <div>
           <h1 className="md:text-6xl text-4xl font-black text-orange-100 text-center">
             Welcome to ThoughtsHub
@@ -149,7 +149,7 @@ const Page2 = () => {
 const Page3 = () => {
   return (
     <div className="-m-2">
-      <div className="md:p-18 sm:p-6 py-6 px-2 md:space-y-15 space-y-12 bg-black">
+      <div className="md:p-18 p-6 md:space-y-15 space-y-12 bg-black">
         <div>
           <h1 className="lg:text-4xl text-3xl">
             What can you expect inside ThoughtsHub?
@@ -205,7 +205,7 @@ const Page3 = () => {
 
 const Page4 = () => {
   return (
-    <div className="md:p-18 sm:p-6 py-6 px-2 md:space-y-15 space-y-12 max-w-2xl ml-auto">
+    <div className="md:p-18 p-6 md:space-y-15 space-y-12 max-w-2xl ml-auto">
       <p className="md:text-xl text-lg">
         Whether you're preparing for exams, exploring a new topic, or just want
         something meaningful to scroll through - ThoughtsHub is your go-to
